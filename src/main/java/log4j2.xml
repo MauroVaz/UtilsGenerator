@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Appenders>
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[YAMAN] UTILS_GENERATOR [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+		</Console>		
+	</Appenders>
+
+	<Loggers>
+		<Logger name="br.com.yaman.utilsgenerator" level="trace" additivity="false">
+			<appender-ref ref="console-log" level="info" />
+		</Logger>		
+		<Root level="trace" additivity="false">
+			<AppenderRef ref="console-log" />
+		</Root>
+	</Loggers>
+
+</Configuration>
